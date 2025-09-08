@@ -17,6 +17,7 @@ body{
 }
 
 main{
+    position: relative;
     height: 100vh;
     width: 100vw;
   
@@ -32,9 +33,11 @@ section#login{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: width 0.5s ease, height 0.5s ease;
 }
 
 section#login > div#imagem{
+    display: block;
     background: blueviolet url(../imagens/marilia-foto.jpg) no-repeat;
     background-size: cover;
     height: 200px;
@@ -42,5 +45,6 @@ section#login > div#imagem{
 }
 
 section#login > div#formulario{
+    display: block;
     padding: 10px;
 }
